@@ -19,21 +19,11 @@ import java.util.*;
 public class StudentGroup implements StudentArrayOperation {
 
 	private Student[] students;
-	private ArrayList<Student> std;
 	/**
 	 * DO NOT remove or change this constructor, it will be used during task check
 	 * @param length
 	 */
-        public void conArraytoArlist()
-         {
-          std=new ArrayList<Student>(Arrays.asList(this.students));
-         }
-        
-		public void conArlisttoArray()
-         {
-          this.students= new Student[std.size()];
-          this.students=std.toArray(this.students);
-         }
+
 	    
 		
 		public StudentGroup(int length) {
