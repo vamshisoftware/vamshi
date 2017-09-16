@@ -40,8 +40,4 @@ public class StudentGroup implements StudentArrayOperation {
 		this.students = new Student[length];
 	    }
 
-	@Override
-	    public Student[] getStudents() {
-		return this.students;
-	    }
 }
