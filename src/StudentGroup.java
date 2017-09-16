@@ -44,35 +44,4 @@ public class StudentGroup implements StudentArrayOperation {
 	    public Student[] getStudents() {
 		return this.students;
 	    }
-
-	@Override
-	    public void setStudents(Student[] students) {
-		try{
-        this.students=new Student[students.length];
-        for(int i=0;i<students.length;i++)
-        {
-        this.students[i]=students[i];
-        }
-        }
-          	catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
-	    }
-
-	@Override
-	    public Student getStudent(int index) {
-		 try{
-	
-                conArraytoArlist();
-                
-                conArlisttoArray();
-		        return  std.get(index);
-		    }
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
-				   finally{return  std.get(index);}
-	    }
 }
